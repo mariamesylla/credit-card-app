@@ -1,0 +1,41 @@
+{
+  "name": "inventoryapp",
+  "version": "1.2.0",
+  "source": "public/index.html",
+  "scripts": {
+    "test": "jest",
+    "client-dev": "parcel public/index.html --open",
+    "server-dev": "nodemon server.js",
+    "seed": "node server/seed.js",
+    "build": "parcel build public/index.html",
+    "start": "parcel  public/index.html && node server.js"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-react": "^7.14.5",
+    "cors": "^2.8.5",
+    "dotenv": "16.0.0",
+    "express": "^4.17.1",
+    "morgan": "1.10.0",
+    "nodemon": "^2.0.19",
+    "parcel": "^2.8.3",
+    "postcss": "^8.4.32",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.12.0",
+    "react-router-dom": "^6.21.1",
+    "react-test-renderer": "^18.2.0",
+    "sequelize": "^6.23.2",
+    "sqlite3": "^5.1.1"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^14.0.0",
+    "babel-jest": "^27.1.0",
+    "jest": "^27.1.0",
+    "prettier": "^3.1.0",
+    "prettier-plugin-tailwindcss": "^0.5.9",
+    "process": "^0.11.10",
+    "supertest": "^6.3.3",
+    "tailwindcss": "^3.3.5"
+  }
+}

@@ -1,1 +1,4 @@
-# credit-card-app
+## Getting Started
+
+1. `npm install`
+2. `npm run client-dev`
