@@ -1,4 +1,3 @@
-import React from 'react';
 import React, { useState } from 'react';
 import { useParams, useNavigate, Link} from "react-router-dom";
 
@@ -120,7 +119,7 @@ export const Form = () => {
         </div>
       </div>
 
-        <hr class="mx-auto my-8 h-1 w-100 border-0 bg-gray-100" />
+        <hr className="mx-auto my-8 h-1 w-100 border-0 bg-gray-100" />
 
       <div>
           <label htmlFor="phone" className="block mb-2 text-sm font-semibold text-gray-600">
@@ -133,7 +132,7 @@ export const Form = () => {
             value={formData.phone}
             onChange={handleChange}
             placeholder="(___) ___-____"
-            maxlength="13"
+            maxLength="13"
             className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
           />
         </div>
@@ -195,13 +194,13 @@ export const Form = () => {
             name="zipCode"
             value={formData.zipCode}
             onChange={handleChange}
-            maxlength="5"
+            maxLength="5"
             className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
           />
           {errors.zipCode && <p className="text-red-500 text-xs mt-1">{errors.zipCode}</p>}
         </div>
          </div>
-         <hr class="mx-auto my-8 h-1 w-100 border-0 bg-gray-100" />
+         <hr className="mx-auto my-8 h-1 w-100 border-0 bg-gray-100" />
 
         <div>
           <label htmlFor="ssn" className="block mb-2 text-sm font-semibold text-gray-600">
@@ -214,7 +213,7 @@ export const Form = () => {
             value={formData.ssn}
             onChange={handleChange}
             placeholder="___-__-____"
-            maxlength="11"
+            maxLength="11"
             className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
           />
           {errors.ssn && <p className="text-red-500 text-xs mt-1">{errors.ssn}</p>}
@@ -260,7 +259,7 @@ export const Form = () => {
             value={formData.totalIncome}
             onChange={handleChange}
             className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
-            maxlength="6"
+            maxLength="6"
           />
           {errors.totalIncome && (
             <p className="text-red-500 text-xs mt-1">{errors.totalIncome}</p>

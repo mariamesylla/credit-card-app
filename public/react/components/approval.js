@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import React, { useState, createContext, useContext, useEffect } from 'react';
 import { useParams, useNavigate, Link } from "react-router-dom";
 
 export const Approval = () => {
@@ -33,27 +33,27 @@ export const Approval = () => {
               : `Sorry ${firstName}, You don't qualify for this credit card. Try applying for another card`}
           </h3>
 
-          <hr class="mx-auto my-8 h-1 w-500 border-0 bg-gray-100 " />
+          <hr className="mx-auto my-8 h-1 w-500 border-0 bg-gray-100 " />
         
         <div>
         <div  className="mx-auto max-w-5xl py-30  ">
 
-          <div class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8">            
-          <div class="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"></div>
-          <blockquote class="text-center text-lg font-semibold leading-8 text-gray-900 sm:text-lg sm:leading-9">
+          <div className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8">            
+          <div className="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"></div>
+          <blockquote className="text-center text-lg font-semibold leading-8 text-gray-900 sm:text-lg sm:leading-9">
 
-            <p class="text-2xl font-bold...">What's Next ?</p>
+            <p className="text-2xl font-bold...">What's Next ?</p>
             </blockquote>
-            <hr class="mx-auto my-8 h-1 w-70 border-0 bg-gray-100 " />
+            <hr className="mx-auto my-8 h-1 w-70 border-0 bg-gray-100 " />
 
-              <blockquote class="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
+              <blockquote className="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
                 <h5>
                   We'll process your application as soon as possible and send
                   you a decision within 14 days.
                 </h5>
                 </blockquote>
 
-                <blockquote class="text-center text-lg  text-gray-900 sm:text-lg sm:leading-9">
+                <blockquote className="text-center text-lg  text-gray-900 sm:text-lg sm:leading-9">
                 <p>
                   There has been no impact to your credit score at this time.
                   You are approved and choose to accept the Card, the
