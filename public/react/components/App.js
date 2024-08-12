@@ -1,8 +1,8 @@
 import React  from "react" ;
 import { Routes, Route } from "react-router-dom" ;
 // import and prepend the api url to any  calls
- import { Card, cards } from "./cards";
- import { Form, Form } from "./Form";
+ import { Card } from "./cards";
+ import { Form } from "./Form";
  import { Home } from "./Home";
  import { Approval } from "./approval";
 
