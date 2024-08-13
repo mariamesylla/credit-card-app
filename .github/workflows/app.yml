@@ -17,10 +17,12 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '18'
+        node-version: '18.x'
 
-    - name: Install dependencies
-      run: npm install
+    - name: Clean and reinstall dependencies
+      run: |
+        rm -rf node_modules
+        npm install
 
-    - name: Run unit tests with trace deprecation
-      run: node --trace-deprecation node_modules/.bin/jest
+    - name: Run unit tests
+      run: npx jest
