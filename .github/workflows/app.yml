@@ -8,7 +8,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -23,5 +22,5 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Run unit tests
-      run: npm test
+    - name: Run unit tests with trace deprecation
+      run: node --trace-deprecation node_modules/.bin/jest
